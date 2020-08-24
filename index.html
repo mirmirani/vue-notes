@@ -5,17 +5,32 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://kit.fontawesome.com/b5035ca9ea.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     
 <section id='app' class='section container'>
-    <h1 class="title">My Text Goes here</h1>
-
+    <h1 class="title">
+        Hi my name is {{name}} and my message is: {{message}}</h1>
+    
+    <input type="text" class="input" v-model="name">
+    <input type="text" class="input" v-model="message">
 </section>
+
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+        name: 'Mir',
+        message: 'Hello world'
+    }
+});
+</script>
+
 
 
 </body>
-<script src="script.js"></script>
+<script src="vue-app.js"></script>
 </html>
