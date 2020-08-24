@@ -1,0 +1,13 @@
+* {
+    text-align: center
+}
+
+body {
+    max-width: 800px;
+}
+
+div {
+    border-style: solid;
+    margin: 20px;
+    padding: 17px;
+}

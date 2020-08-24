@@ -7,4 +7,5 @@ input.addEventListener('keyup', (e) =>
     const text = e.target.value;
     heading.innerText = text;
 }
-)
+);
+

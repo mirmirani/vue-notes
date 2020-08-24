@@ -11,23 +11,44 @@
 
 <body>
     
-<section id='app' class='section container'>
+<div id='app1' class='section container'>
     <h1 class="title">
         Hi my name is {{name}} and my message is: {{message}}</h1>
     
     <input type="text" class="input" v-model="name">
     <input type="text" class="input" v-model="message">
-</section>
+    </div>
 
-<script>
-  const app = new Vue({
-    el: '#app',
-    data: {
-        name: 'Mir',
-        message: 'Hello world'
-    }
-});
-</script>
+<div id='app2'>
+  <h1 class="title">{{ myTitle }}</h1>
+
+  <img width="300" height="500" :src="avatar">
+  
+  <!--
+    shorthand
+    <img width='300' height='300' :src='avatar'>
+   -->
+</div>
+
+<div>
+  <a v-on:click='incrementCounter'>Increment Button</a>
+
+  <form v-on:submit="processForm">
+  
+  <input @keyup="updateText">
+</form>
+
+</div>
+
+<div id="app3">
+<p>
+  Username: {{username}} <br>
+  Password: {{password}} <br>
+</p>
+<button @click="celebrate">Click to celebrate</button>
+
+</div>
+
 
 
 
