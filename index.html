@@ -33,11 +33,9 @@
 <div>
   <a v-on:click='incrementCounter'>Increment Button</a>
 
-  <form v-on:submit="processForm">
-  
+<form v-on:submit="processForm">  
   <input @keyup="updateText">
 </form>
-
 </div>
 
 <div id="app3">
@@ -49,7 +47,9 @@
 
 </div>
 
-
+<div id='app4'>
+  <h1>{{ myTitle }}</h1>
+</div>
 
 
 </body>

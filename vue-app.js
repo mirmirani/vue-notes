@@ -28,6 +28,14 @@ const app3 = new Vue({
           alert('we are celebrating!')
         }
       }
-})
+});
+
+var app4 = new Vue({
+  el: '#app4',
+
+  data: {
+    myTitle: 'Hello World!'
+  }
+});
 
 //coontinue from: https://scotch.io/courses/getting-started-with-vuejs/vue-templating-basics
