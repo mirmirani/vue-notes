@@ -1,5 +1,6 @@
-* {
-    text-align: center
+*, h1, p {
+    text-align: center;
+    font-family: Times; 
 }
 
 body {
@@ -10,4 +11,19 @@ div {
     border-style: solid;
     margin: 20px;
     padding: 17px;
+    font-family: Times; 
+}
+
+.button {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.button:hover {
+    background-color: red;
+    box-shadow: 5px 5px 10px #888888;
 }
