@@ -13,24 +13,53 @@
 </head>
 
 <body>
-    
-  <div id="app">
-    <div class="notification" v-bind:class="[classOne, classTwo]">
-  
-      I am a notification
-  
-    </div>
+
+
+  <div class="notification"
+  v-bind:style="{color: myColor,
+  fontSize: mySize, 
+  backgroundColor: myBgcolor }"
+  >
+  I am a notifcation
   </div>
-  
+
+  <div
+  class="message"
+  >
+  <div
+  class="message-body"
+  :style="myMessageStyles"
+  >
+  I am a notification
+  </div>
+  </div>
+
+
+
+
   <script>
   
-    const app = new Vue({
-      el: "#app",
+  const app = new Vue({
+      el: ".notification",
       data: {
-        classOne: 'is-danger',
-        classTwo: 'is-large'
-      }
+        myColor: 'black',
+        mySize: '80px',
+        myBgcolor: 'coral'
+       }
     })
+
+    const app2 = new Vue({
+      el: ".message",
+      data: {
+        myMessageStyles: {
+          color: "#EEE",
+          fontSize: '75px',
+          backgroundColor: 'coral',
+        },
+      }
+    });
+
+    // 
     
     </script>
 </body>
